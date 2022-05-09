@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist",
     "format": "prettier --write \"../**/*.ts\" \"test/**/*.ts\"",
     "build": "rimraf dist && tsc -p tsconfig.build.json",
-    "start": "ts-node -r tsconfig-paths/register ../main.ts",
+    "start": "npm run start:prod",
     "dev": "cross-env nest start --watch",
     "start:dev": "cross-env NODE_ENV=dev nest start --watch",
     "start:debug": "cross-env NODE_ENV=dev nest start --watch",
